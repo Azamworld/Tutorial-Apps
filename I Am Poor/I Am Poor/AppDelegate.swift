@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  I Am Poor
 //
-//  Created by Angela Yu on 24/08/2016.
-//
+//  Created by Azam on 11/30/17.
+//  Copyright © 2017 Azamworld. All rights reserved.
 //
 
 import UIKit
