@@ -41,7 +41,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="riw-dZ-Ij8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wE5-df-QWp">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="RYq-qZ-m6C" id="By4-HT-zK4"/>
                             </connections>
@@ -57,8 +56,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C3V-XP-5md" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9g2-X6-22J">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="9g2-X6-22J">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
