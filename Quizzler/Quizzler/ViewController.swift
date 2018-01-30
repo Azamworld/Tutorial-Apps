@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import ProgressHUD
 
 class ViewController: UIViewController {
     
@@ -73,6 +74,8 @@ class ViewController: UIViewController {
 //            print("End of the Quiz")
 //            questionNumber = 0
             
+            //Bug Fixed score update on last qu.
+            scoreLabel.text = "Score: \(score)"
             let alert = UIAlertController(title: "Awesome", message: "You've finished all the questions, do you want to start over?", preferredStyle: .alert)
             
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { (UIAlertAction) in
@@ -90,13 +93,14 @@ class ViewController: UIViewController {
         let correctAnswer = allQuestions.list[questionNumber].answer
         if correctAnswer == pickedAnswer {
 //            print("You got it!")
-//            ProgressHUD.showSuccess("Correct")
+            ProgressHUD.showSuccess("Correct")
             score += 1
         }
         else {
 //            print("wrong!")
 //            score -= 1
 //            ProgressHUD.showError("Wrong!")
+            ProgressHUD.showError("Wrong!")
         }
     }
     
